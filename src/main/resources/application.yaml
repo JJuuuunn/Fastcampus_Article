@@ -3,7 +3,7 @@ management.endpoints.web.exposure.include: "*"
 
 logging:
   level:
-    com.fastcampus.projectboard: debug
+    com.fastcampus.projectarticle: debug
     org.springframework.web.servlet: debug
     org.hibernate.type.descriptor.sql.BasicBinder: trace
 
@@ -16,10 +16,8 @@ spring:
   jpa:
     defer-datasource-initialization: true
     hibernate.ddl-auto: create
-    open-in-view: false
     show-sql: true
     properties:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
-  h2.console.enabled: true
   sql.init.mode: always
